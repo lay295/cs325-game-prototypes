@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tilt Stacker</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Tilt Stacker</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+Tilt controls! I wanted to do the challenge where something in the game is based on something in the real world. I wanted to use some kind of weather API to effect the game but I thought there would be too many variants. So I thought why not use my phone to control the game?
+</li>
+
+<li><strong>Technical Merit:</strong>
+This is the first time I'm messing with physics in phaser, and the most interesting part would have to be the tilt controls. It allows more fine grain control of the platform as compred to a key press. I did add arrow key support in case people could not play it on their phones.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What I learned from this protype is that it works really well and is pretty fun! It's just boxes right now but I think power ups and other different items could really expand the games potential. I actually wanted to make the falling pieces tetris pieces free falling, and I would click on them with my finger to rotate them as they fall.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Play button: <a href="https://phaser.io/examples/v3/view/physics/arcade/restart-physics-scene">Phaser example</a></li>
+<li>Block sprite: <a href="https://phaser.io/examples/v3/view/physics/matterjs/simple-body">Phaser example</a></li>
+<li>Platform sprite: <a href="https://phaser.io/examples/v3/view/physics/matterjs/simple-body">Phaser example</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+I used this <a href="https://phaser.io/examples/v3/view/physics/matterjs/simple-body">Phaser example</a></li> as the base of my game
+</li>
+
+<li><strong>High Concept:</strong>
+Use your phone to control the platform and keep the boxes from falling to their doom! Survive as long as you can and keep stacking.
+</li>
+
+<li><strong>Theme:</strong>
+Some decision in the game must be based on something from the real world (rolling physical dice, the temperature outside)
+In this case I'm using my phone from the real world.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Tilt input(indirect?), deterministic, achiever, side-scroller?
+</li>
+
+<li><strong>Prototype Goal:</strong>
+This prototype is evaluation the physics engine of phaser, as well as if it's fun to stack things with tilt controls.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want the player to experience getting better at stacking the crates, and getting used to the controls. And they should feel a sense of accomplishment once they beat their old highscore.
+</li>
+
+<li><strong>Gameplay:</strong>
+The actions the player can preform on mobile are very simple, they either tilt the phone left or right to move the platform. The craetes are very slippery so they should move with caution. On a computer backup left and right arrow key controls are provided, however because the controls aren't as granualar as the tilt controls it's harder to keep the crates on the platform.
+</li>
+
+<li><strong>Strategies:</strong>
+I expect players will have a hard time getting the crates to stay at first, but once they have less jerky movements, and find out crate stacking structures that are stable, they will be able to improve their scores a lot.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+There is no background story, however maybe you could be some kind of warehouse worker stacking pallets would be a good idea.
+</li>
+
+<li><strong>Target Audience:</strong>
+A quick mobile game people can play on the go
+</li>
+
+<li><strong>Play Time:</strong>
+1-3 Minutes
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
